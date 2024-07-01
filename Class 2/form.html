@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Contact Information</h1>
+    <form action="/submit" method="POST">
+      <div>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          placeholder="Enter your Name"
+          name="name"
+          id="name"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="Phone">Phone</label>
+        <input
+          type="number"
+          placeholder="Enter your Phone number"
+          name="phone"
+          id="Phone"
+          max="10"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="Email">Email</label>
+        <input
+          type="email"
+          placeholder="Enter your Email address"
+          name="Email"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="Message">Message</label>
+        <textarea name="Message" id="Message"></textarea>
+      </div>
+
+      <div>
+        <label for="course">Course Preferences</label>
+        <br />
+        <label for="FF1">FF1</label>
+        <input type="checkbox" value="FF1" name="course" id="FF1" />
+        <label for="FF2">FF2</label>
+        <input type="checkbox" value="FF2" name="course" id="FF2" />
+        <label for="FF3">FF3</label>
+        <input type="checkbox" value="FF3" name="course" id="FF3" />
+      </div>
+
+      <div>
+        <label for="">Gender</label>
+        <br />
+        <label for="MALE">Male</label>
+        <input type="radio" value="male" name="gender" id="MALE" />
+        <label for="FEMALE">Female</label>
+        <input type="radio" value="female" name="gender" id="FEMALE" />
+        <label for="OTHER">Others</label>
+        <input type="radio" value="others" name="gender" id="OTHER" />
+      </div>
+
+      <div>
+        <label for="">Select city</label>
+        <select name="city">
+          <option value="">--Please choose an option--</option>
+          <option value="BLR">Bangalore</option>
+          <option value="HBL">Hubli</option>
+          <option value="DL">Delhi</option>
+          <option value="MUM">Mumbai</option>
+        </select>
+      </div>
+
+      <div>
+        <!-- <input type="button" name="Submit" id="submit" /> -->
+        <button>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
